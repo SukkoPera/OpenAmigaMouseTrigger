@@ -31,14 +31,15 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:OpenAmigaMouseTrigger-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "OpenAmigaMouseTrigger"
-Date "2017-12-18"
-Rev "20171218"
+Date "2018-01-07"
+Rev "1"
 Comp "SukkoPera"
 Comment1 ""
 Comment2 ""
@@ -48,17 +49,17 @@ $EndDescr
 $Comp
 L Conn_01x02 J1
 U 1 1 5A383421
-P 4175 3925
-F 0 "J1" H 4175 4025 50  0000 C CNN
-F 1 "AMIGA_SIGNALS" H 4225 3725 50  0000 C CNN
-F 2 "OpenAmigaMouseTrigger:LoosePads-2" H 4175 3925 50  0001 C CNN
-F 3 "" H 4175 3925 50  0001 C CNN
-	1    4175 3925
+P 3750 3925
+F 0 "J1" H 3750 4025 50  0000 C CNN
+F 1 "AMIGA_SIGNALS" H 3800 3725 50  0000 C CNN
+F 2 "OpenAmigaMouseTrigger:LoosePads-2" H 3750 3925 50  0001 C CNN
+F 3 "" H 3750 3925 50  0001 C CNN
+	1    3750 3925
 	-1   0    0    -1  
 $EndComp
-Text Notes 3300 3950 0    50   ~ 0
+Text Notes 2875 3950 0    50   ~ 0
 LMB (Odd CIA Pin 8)
-Text Notes 3325 4050 0    50   ~ 0
+Text Notes 2900 4050 0    50   ~ 0
 RMB (Paula Pin 33)
 $Comp
 L C C1
@@ -76,7 +77,7 @@ L R R1
 U 1 1 5A3835EC
 P 3850 4525
 F 0 "R1" V 3930 4525 50  0000 C CNN
-F 1 "10k" V 3850 4525 50  0000 C CNN
+F 1 "4.7k" V 3850 4525 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3780 4525 50  0001 C CNN
 F 3 "" H 3850 4525 50  0001 C CNN
 	1    3850 4525
@@ -115,19 +116,6 @@ F 3 "" H 3475 4400 50  0001 C CNN
 	1    3475 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3475 4400 3475 4525
-Wire Wire Line
-	3475 4525 3700 4525
-Wire Wire Line
-	4000 4525 4875 4525
-Wire Wire Line
-	4875 3425 4875 4800
-Wire Wire Line
-	4875 4800 5400 4800
-Wire Wire Line
-	4875 3425 5400 3425
-Connection ~ 4875 4525
 $Comp
 L VCC #PWR02
 U 1 1 5A383D15
@@ -139,35 +127,6 @@ F 3 "" H 6000 2525 50  0001 C CNN
 	1    6000 2525
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5200 2700 5200 5525
-Wire Wire Line
-	5200 2700 6000 2700
-Wire Wire Line
-	6000 2525 6000 2875
-Connection ~ 6000 2700
-Wire Wire Line
-	5200 4100 6000 4100
-Wire Wire Line
-	6000 3975 6000 4250
-Connection ~ 6000 4100
-Wire Wire Line
-	4375 3925 4750 3925
-Wire Wire Line
-	4750 3925 4750 3225
-Wire Wire Line
-	4750 4025 4750 4600
-Wire Wire Line
-	4750 3225 5400 3225
-Wire Wire Line
-	4750 4600 5400 4600
-Wire Wire Line
-	5200 5525 6000 5525
-Wire Wire Line
-	6000 5525 6000 5350
-Connection ~ 5200 4100
-Wire Wire Line
-	4375 4025 4750 4025
 NoConn ~ 6600 3625
 NoConn ~ 6600 5000
 $Comp
@@ -181,18 +140,6 @@ F 3 "" H 7500 3925 50  0001 C CNN
 	1    7500 3925
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6600 3225 7025 3225
-Wire Wire Line
-	7025 3225 7025 3925
-Wire Wire Line
-	7025 3925 7300 3925
-Wire Wire Line
-	7300 4025 7000 4025
-Wire Wire Line
-	7000 4025 7000 4600
-Wire Wire Line
-	7000 4600 6600 4600
 $Comp
 L C C2
 U 1 1 5A38466D
@@ -226,10 +173,6 @@ F 3 "" H 9400 4200 50  0001 C CNN
 	1    9400 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9400 3700 9400 3800
-Wire Wire Line
-	9400 4100 9400 4200
 $Comp
 L GND #PWR05
 U 1 1 5A384915
@@ -274,10 +217,6 @@ F 3 "" H 10475 925 50  0001 C CNN
 	1    10475 925 
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	10475 925  10475 825 
-Wire Wire Line
-	10800 825  10800 900 
 $Comp
 L Conn_01x02 J3
 U 1 1 5A384B18
@@ -300,8 +239,6 @@ F 3 "" H 10350 3950 50  0001 C CNN
 	1    10350 3950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10350 4100 10350 3950
 $Comp
 L GND #PWR010
 U 1 1 5A384E71
@@ -313,15 +250,8 @@ F 3 "" H 10775 4100 50  0001 C CNN
 	1    10775 4100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10450 4100 10450 4000
-Wire Wire Line
-	10450 4000 10775 4000
-Wire Wire Line
-	10775 4000 10775 4100
 Text Notes 3500 4825 0    60   ~ 0
 CLOCK PULSE\nGENERATOR
-Connection ~ 4275 4525
 $Comp
 L GND #PWR011
 U 1 1 5A385557
@@ -333,10 +263,6 @@ F 3 "" H 4275 5075 50  0001 C CNN
 	1    4275 5075
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4275 5075 4275 4975
-Wire Wire Line
-	4275 4525 4275 4675
 $Comp
 L Conn_01x01 J99
 U 1 1 5A385941
@@ -349,4 +275,115 @@ F 3 "" H 10950 6275 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 10950 6075
+$Comp
+L R R2
+U 1 1 5A528FE1
+P 4150 3650
+F 0 "R2" V 4230 3650 50  0000 C CNN
+F 1 "22k" V 4150 3650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4080 3650 50  0001 C CNN
+F 3 "" H 4150 3650 50  0001 C CNN
+	1    4150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5A5291EB
+P 4400 3650
+F 0 "R3" V 4480 3650 50  0000 C CNN
+F 1 "22k" V 4400 3650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4330 3650 50  0001 C CNN
+F 3 "" H 4400 3650 50  0001 C CNN
+	1    4400 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3475 4400 3475 4525
+Wire Wire Line
+	3475 4525 3700 4525
+Wire Wire Line
+	4000 4525 4875 4525
+Wire Wire Line
+	4875 3425 4875 4800
+Wire Wire Line
+	4875 4800 5400 4800
+Wire Wire Line
+	4875 3425 5400 3425
+Connection ~ 4875 4525
+Wire Wire Line
+	5200 2700 5200 5525
+Wire Wire Line
+	4150 2700 6000 2700
+Wire Wire Line
+	6000 2525 6000 2875
+Connection ~ 6000 2700
+Wire Wire Line
+	5200 4100 6000 4100
+Wire Wire Line
+	6000 3975 6000 4250
+Connection ~ 6000 4100
+Wire Wire Line
+	3950 3925 4750 3925
+Wire Wire Line
+	4750 3925 4750 3225
+Wire Wire Line
+	4750 4025 4750 4600
+Wire Wire Line
+	4750 3225 5400 3225
+Wire Wire Line
+	4750 4600 5400 4600
+Wire Wire Line
+	5200 5525 6000 5525
+Wire Wire Line
+	6000 5525 6000 5350
+Connection ~ 5200 4100
+Wire Wire Line
+	3950 4025 4750 4025
+Wire Wire Line
+	6600 3225 7025 3225
+Wire Wire Line
+	7025 3225 7025 3925
+Wire Wire Line
+	7025 3925 7300 3925
+Wire Wire Line
+	7300 4025 7000 4025
+Wire Wire Line
+	7000 4025 7000 4600
+Wire Wire Line
+	7000 4600 6600 4600
+Wire Wire Line
+	9400 3700 9400 3800
+Wire Wire Line
+	9400 4100 9400 4200
+Wire Wire Line
+	10475 925  10475 825 
+Wire Wire Line
+	10800 825  10800 900 
+Wire Wire Line
+	10350 4100 10350 3950
+Wire Wire Line
+	10450 4100 10450 4000
+Wire Wire Line
+	10450 4000 10775 4000
+Wire Wire Line
+	10775 4000 10775 4100
+Connection ~ 4275 4525
+Wire Wire Line
+	4275 5075 4275 4975
+Wire Wire Line
+	4275 4525 4275 4675
+Wire Wire Line
+	4150 3800 4150 3925
+Connection ~ 4150 3925
+Wire Wire Line
+	4400 3800 4400 4025
+Connection ~ 4400 4025
+Wire Wire Line
+	4150 2700 4150 3500
+Connection ~ 5200 2700
+Wire Wire Line
+	4400 3500 4400 2700
+Connection ~ 4400 2700
+Text Notes 3400 3725 0    50   ~ 0
+OPTIONAL Weak\nPull-Up Resistors
 $EndSCHEMATC
