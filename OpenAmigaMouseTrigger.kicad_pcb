@@ -788,7 +788,7 @@
   (gr_arc (start 122.936 119.888) (end 122.936 121.158) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 148.59 94.234) (end 148.59 92.964) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 122.936 94.234) (end 121.666 94.234) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_text "github.com/SukkoPera/\nOpenKickstartSwitcher" (at 147.066 106.553 90) (layer B.SilkS)
+  (gr_text "github.com/SukkoPera/\nOpenAmigaMouseTrigger" (at 147.066 106.553 90) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
   (dimension 28.194 (width 0.3) (layer F.Fab)
