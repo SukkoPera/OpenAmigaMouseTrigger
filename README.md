@@ -1,5 +1,5 @@
 # OpenAmigaMouseTrigger
-OpenAmigaMouseTrigger is an Open Hardware PCB that allows using the state of the mouse buttons at power-up of an Amiga computer to trigger features of other boards, instead of using physical switches. This is mainly useful for controlling a [Kickstart Switcher](https://github.com/SukkoPera/OpenKickstartSwitcher) or a *DF0 Switcher*.
+OpenAmigaMouseTrigger is an Open Hardware PCB that allows using the state of the mouse buttons at power-up of an Amiga computer to trigger features of other boards, instead of using physical switches. This is mainly useful for controlling a [Kickstart Switcher](https://github.com/SukkoPera/OpenKickstartSwitcher) or a [Drive Switcher](https://github.com/SukkoPera/OpenAmigaDriveSwitcher).
 
 ![Board](https://raw.githubusercontent.com/SukkoPera/OpenAmigaMouseTrigger/master/doc/render-top.png)
 
